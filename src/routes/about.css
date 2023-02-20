@@ -1,0 +1,107 @@
+.text-animation {
+  position: relative;
+  display: inline-block;
+  font-size: 23px;
+  height: 100px;
+    margin: 2rem;
+    color: rgb(242, 246, 247);
+}
+
+.text-animation::after {
+  content: '|';
+  display: inline-block;
+  margin-left: 5px;
+  animation: cursor 0.8s infinite;
+}
+
+@keyframes cursor {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes text {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.text-animation::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text-animation::before span {
+  display: inline-block;
+  width: 0;
+  animation: text 2s linear forwards;
+}
+
+@keyframes text {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+
+
+
+
+  .App{
+    display:inline;
+    margin:100px ;
+    align-items: center;
+  
+    
+  }
+.hr{
+  align-items: center;
+  color: white;
+  margin: 2rem;
+}
+.hr h2{
+  text-decoration: underline;
+}
+.other{
+
+  color: rgb(252, 252, 252);
+  margin-top: 5rem ;
+  
+  margin-left: 2rem;
+}
+.mine{
+   font-size: 80px;
+   
+}
+.para{
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  color:rgb(247, 251, 252);
+}
+@media screen and (max-width:640px){
+  .circular-progress {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.logos-container {
+  display: flex;
+  justify-content: centre;
+  align-items: centre;
+  margin: 100px;
+}
+
+.logos-container img {
+  height: 50px;
+  margin: 0 10px;
+}
+.other h2{
+  text-decoration: underline;
+  word-spacing: 0.5rem;
+  color: white;
+}
+
+
