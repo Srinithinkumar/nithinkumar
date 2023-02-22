@@ -12,7 +12,7 @@ const About = () => {
       <Navbar/>
       <HeroImg2 heading="ABOUT" text="Passion and Perseverance" />
       
-      <div class="text-animation">Hello!,Iam G.Srinithin Kumar persuing computer science and engineering also specialization in MachineLearning & Artificial Intelligence</div>
+      <div class="text-animation">Hello!,Iam G.Srinithin Kumar persuing computer science and engineering, specialization in MachineLearning & Artificial Intelligence</div>
 
       <div className='hr'>
          <h2>SKILLSET</h2>
